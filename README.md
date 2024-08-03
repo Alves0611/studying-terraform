@@ -41,3 +41,7 @@ Providers: Os provedores expõem recursos, o que possibilita a criação de infr
 
 
 ![alt text](./images/fluxo.png)
+
+A força do Terraform está em sua capacidade de fornecer uma maneira consistente, controlada por versão e reproduzível de gerenciar a infraestrutura.
+
+Ele abstrai as especificidades de diferentes provedores de infraestrutura, permitindo que você defina a infraestrutura como código e automatize o provisionamento e o gerenciamento de recursos em vários ambientes.
