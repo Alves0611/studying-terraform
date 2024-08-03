@@ -49,6 +49,8 @@ Ele abstrai as especificidades de diferentes provedores de infraestrutura, permi
 
 ## Por que utilizar Terraform? 
 
+https://developer.hashicorp.com/terraform/intro#why-terraform
+
 **Infraestrutura como Código (IaC)**
 - O Terraform permite que você defina sua infraestrutura e configurações de aplicativos como código.
 - Isso significa que você pode usar práticas de codificação familiares, como controle de versão (git e github) e revisões de código (Pull Request e Code Review), para gerenciar sua infraestrutura, tornando-a mais confiável e fácil de manter.
@@ -95,3 +97,7 @@ O Terraform pode ser integrado aos seus pipelines de integração contínua e im
 - O Terraform tem uma comunidade grande e ativa, o que significa que você pode encontrar uma variedade de recursos, módulos e melhores práticas.
 - Esse ecossistema pode ajudá-lo a começar rapidamente e a resolver desafios comuns.
 
+
+Em resumo, o Terraform é uma ferramenta poderosa que simplifica e automatiza o gerenciamento de infraestrutura e recursos de nuvem.
+
+Seja você uma pequena equipe gerenciando alguns servidores ou uma grande organização com implantações complexas na nuvem, o Terraform pode ajudá-lo a manter a consistência, confiabilidade e agilidade em suas práticas de gerenciamento de infraestrutura
