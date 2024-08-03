@@ -60,3 +60,14 @@ Ele abstrai as especificidades de diferentes provedores de infraestrutura, permi
 
 - O Terraform usa uma abordagem declarativa, em que você define o estado final desejado de sua infraestrutura.
 - O Terraform então descobre como fazer as alterações necessárias para atingir esse estado, tratando automaticamente das dependências e da ordem das operações.
+
+
+**Gerenciamento de Dependências de Recursos**
+
+- O Terraform gerencia automaticamente as dependências entre recursos, garantindo que os recursos sejam criados ou atualizados na ordem correta.
+- Você pode especificar dependências explicitamente, e o Terraform cuidará do restante.
+
+**Gerenciamento de Estado**
+
+- O Terraform mantém um arquivo de estado que acompanha o estado atual de sua infraestrutura.
+- Isso ajuda a entender o que está atualmente implantado e permite que o Terraform detecte e faça alterações incrementalmente.
