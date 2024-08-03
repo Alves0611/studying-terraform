@@ -86,3 +86,12 @@ O Terraform permite que você implemente políticas de segurança e conformidade
 
 **Integração com CI/CD**
 O Terraform pode ser integrado aos seus pipelines de integração contínua e implantação contínua (CI/CD), permitindo automatizar alterações na infraestrutura junto com as implantações de aplicativos.
+
+**Suporte a Múltiplas Plataformas e Nuvem Híbrida**
+- O Terraform é agnóstico em relação à nuvem e suporta vários provedores de nuvem, como AWS, Azure, Google Cloud e outros.
+- Também suporta ambientes on-premises e de nuvem híbrida, fornecendo uma maneira unificada de gerenciar a infraestrutura em várias plataformas.
+
+**Comunidade e Ecossistema**
+- O Terraform tem uma comunidade grande e ativa, o que significa que você pode encontrar uma variedade de recursos, módulos e melhores práticas.
+- Esse ecossistema pode ajudá-lo a começar rapidamente e a resolver desafios comuns.
+
