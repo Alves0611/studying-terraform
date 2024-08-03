@@ -22,6 +22,8 @@ Você pode dizer ao Terraform como deseja que sua cidade fique, e ele moldará o
 
 ## Como o Terraform funciona?
 
+https://developer.hashicorp.com/terraform/intro#how-does-terraform-work
+
 O núcleo (core) do Terraform usa duas fontes de entrada: 
 - Seus arquivos de configuração (seu estado desejado)
 - O estado atual, que é gerenciado pelo Terraform
