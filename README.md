@@ -135,3 +135,18 @@ Da mesma forma, o Terraform usa arquivos de configuração para detalhar a confi
 Por exemplo, o Terraform pode ser usado para orquestrar um cluster AWS e OpenStack simultaneamente, ao mesmo tempo em que permite que provedores de terceiros, como Cloudflare e DNSimple, sejam integrados para fornecer serviços de CDN e DNS.
 
 Isso permite que o Terraform represente e gerencie toda a infraestrutura com seus serviços de suporte, em vez de apenas o subconjunto existente em um único provedor. Ele fornece uma única sintaxe unificada, em vez de exigir que os operadores usem ferramentas independentes e não interoperáveis para cada plataforma e serviço.
+
+O Terraform também separa a fase de planejamento da fase de execução, usando o conceito de um plano de execução.
+
+Ao executar o terraform plan, o estado atual é atualizado e a configuração é consultada para gerar um plano de ação.
+
+O plano inclui todas as ações a serem tomadas: quais recursos serão criados, destruídos ou modificados.
+
+Ele pode ser inspecionado pelos operadores para garantir que seja exatamente o que se espera. Usando o gráfico de terraform, o plano pode ser visualizado para mostrar a ordenação dependente
+
+
+Depois que o plano é capturado, a fase de execução pode ser limitada apenas às ações do plano.
+
+Outras ferramentas combinam as fases de planejamento e execução, o que significa que os operadores são forçados a raciocinar mentalmente sobre os efeitos de uma mudança, o que rapidamente se torna intratável em grandes infraestruturas.
+
+O Terraform permite que os operadores apliquem mudanças com confiança, pois sabem exatamente o que acontecerá de antemão.
