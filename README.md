@@ -112,3 +112,11 @@ Esse modelo permite representar tudo, desde hardware físico, máquinas virtuais
 Devido a essa flexibilidade, o Terraform pode ser usado para resolver muitos problemas diferentes.
 
 Isso significa que há várias ferramentas existentes que se sobrepõem aos recursos do Terraform.
+
+**Terraform vs. Chef, Puppet, etc.**
+
+As ferramentas de gerenciamento de configuração instalam e gerenciam software em uma máquina que já existe. O Terraform não é uma ferramenta de gerenciamento de configuração e permite que as ferramentas existentes se concentrem em seus pontos fortes: inicialização e manutenção de recursos.
+
+O Terraform se concentra na abstração de nível mais alto do data center e dos serviços associados, permitindo que você use ferramentas de gerenciamento de configuração em sistemas individuais. Ele também tem como objetivo trazer os mesmos benefícios da codificação da configuração do sistema para o gerenciamento da infraestrutura.
+
+Se você estiver usando o gerenciamento de configuração tradicional em suas instâncias de computação, poderá usar o Terraform para configurar o software de inicialização, como o cloud-init, para ativar o software de gerenciamento de configuração na primeira inicialização do sistema.
