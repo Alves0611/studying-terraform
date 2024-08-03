@@ -15,3 +15,23 @@ Por exemplo, se você quiser construir uma casa na floresta mágica, você usa o
 Se você quiser construir um carro na cidade mágica, você usa o Provider da Cidade, e ele possui ferramentas para construir na cidade.
 
 Portanto, os providers no Terraform são como caixas de ferramentas especiais que ajudam você a construir coisas em lugares mágicos diferentes, garantindo que você use as ferramentas certas e siga as regras de cada lugar.
+
+## Resources 
+
+https://developer.hashicorp.com/terraform/language/resources
+
+Imagine que você está construindo com blocos coloridos de LEGO. Cada tipo diferente de bloco é como um 'recurso' no Terraform.
+
+Agora, pense em construir uma casa. Você usaria peças de LEGO como paredes, janelas e um telhado, certo?
+
+Essas peças de LEGO são como recursos no Terraform. São as coisas básicas de que você precisa para criar algo, como uma casa ou um computador.
+
+O Terraform permite que você construa coisas no mundo digital, como uma casa virtual na internet.
+
+Assim como com os LEGO, você usa recursos para construir sua casa virtual. Por exemplo, você pode usar um recurso de 'máquina virtual' para criar um computador dentro da sua casa virtual.
+
+Ou você pode usar um recurso de 'banco de dados' para armazenar informações.
+
+Recursos no Terraform são como suas peças de LEGO para construir no mundo digital.
+
+Eles ajudam você a criar todos os tipos de coisas, assim como as peças de LEGO ajudam você a construir estruturas incríveis no mundo real.
