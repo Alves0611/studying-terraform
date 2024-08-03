@@ -42,8 +42,6 @@ Providers: Os provedores expõem recursos, o que possibilita a criação de infr
 - Aplicar (apply): Após a aprovação, o Terraform executa as operações propostas na ordem correta, respeitando todas as dependências de recursos. Por exemplo, se você atualizar as propriedades de uma VPC e alterar o número de máquinas virtuais nessa VPC, o Terraform recriará a VPC antes de dimensionar as máquinas virtuais.
 
 
-![alt text](./images/fluxo.png)
-
 A força do Terraform está em sua capacidade de fornecer uma maneira consistente, controlada por versão e reproduzível de gerenciar a infraestrutura.
 
 Ele abstrai as especificidades de diferentes provedores de infraestrutura, permitindo que você defina a infraestrutura como código e automatize o provisionamento e o gerenciamento de recursos em vários ambientes.
@@ -71,3 +69,18 @@ Ele abstrai as especificidades de diferentes provedores de infraestrutura, permi
 
 - O Terraform mantém um arquivo de estado que acompanha o estado atual de sua infraestrutura.
 - Isso ajuda a entender o que está atualmente implantado e permite que o Terraform detecte e faça alterações incrementalmente.
+
+**Planejamento de Alterações**
+
+- O Terraform fornece um comando "plan" que mostra quais alterações ele fará em sua infraestrutura antes de aplicá-las.
+- Isso ajuda a evitar alterações não planejadas e permite a revisão e aprovação de modificações na infraestrutura.
+
+**Modularidade e Reutilização**
+
+- Você pode criar componentes de infraestrutura reutilizáveis usando módulos do Terraform.
+- Isso promove a reutilização de código e simplifica o gerenciamento de configurações complexas.
+
+**Escalabilidade**
+
+- O Terraform pode gerenciar infraestruturas de qualquer tamanho, desde pequenos projetos até ambientes grandes e complexos.
+- Ele se dimensiona de acordo com suas necessidades e pode gerenciar milhares de recursos de forma eficiente.
