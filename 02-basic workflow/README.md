@@ -39,6 +39,8 @@ Eles ajudam você a criar todos os tipos de coisas, assim como as peças de LEGO
 
 ## State Management (gerenciamento de estado)
 
+https://developer.hashicorp.com/terraform/language/state
+
 Imagine 'Gerenciamento de Estado' no Terraform como manter um diário para suas criações de LEGO.
 
 Pense que você construiu um incrível castelo de LEGO e deseja se lembrar exatamente de como ele parece e onde cada peça está localizada. Então, você anota todos os detalhes em seu diário.
