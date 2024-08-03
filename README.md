@@ -101,3 +101,14 @@ O Terraform pode ser integrado aos seus pipelines de integração contínua e im
 Em resumo, o Terraform é uma ferramenta poderosa que simplifica e automatiza o gerenciamento de infraestrutura e recursos de nuvem.
 
 Seja você uma pequena equipe gerenciando alguns servidores ou uma grande organização com implantações complexas na nuvem, o Terraform pode ajudá-lo a manter a consistência, confiabilidade e agilidade em suas práticas de gerenciamento de infraestrutura
+
+
+## Terraform vs Alternativas
+
+O Terraform oferece uma abstração flexível de recursos e provedores.
+
+Esse modelo permite representar tudo, desde hardware físico, máquinas virtuais e contêineres até provedores de e-mail e DNS.
+
+Devido a essa flexibilidade, o Terraform pode ser usado para resolver muitos problemas diferentes.
+
+Isso significa que há várias ferramentas existentes que se sobrepõem aos recursos do Terraform.
