@@ -35,3 +35,18 @@ Ou você pode usar um recurso de 'banco de dados' para armazenar informações.
 Recursos no Terraform são como suas peças de LEGO para construir no mundo digital.
 
 Eles ajudam você a criar todos os tipos de coisas, assim como as peças de LEGO ajudam você a construir estruturas incríveis no mundo real.
+
+
+## State Management (gerenciamento de estado)
+
+Imagine 'Gerenciamento de Estado' no Terraform como manter um diário para suas criações de LEGO.
+
+Pense que você construiu um incrível castelo de LEGO e deseja se lembrar exatamente de como ele parece e onde cada peça está localizada. Então, você anota todos os detalhes em seu diário.
+
+Agora, imagine que você queira fazer algumas mudanças em seu castelo, como adicionar uma ponte levadiça ou mudar a cor das paredes. Seu diário o ajuda a lembrar como o castelo está agora, para que você possa fazer as mudanças sem bagunçá-lo.
+
+No Terraform, 'Gerenciamento de Estado' é como o seu diário. Quando você cria coisas virtuais, como uma casa digital ou um servidor em nuvem, o Terraform acompanha como elas parecem e onde estão, assim como você faz com suas criações de LEGO. Ele escreve todas essas informações em um arquivo especial chamado 'arquivo de estado (state file)'.
+
+Portanto, quando você deseja fazer alterações ou adicionar coisas novas ao seu mundo virtual, o Terraform verifica seu arquivo de estado para ver o que está lá e como está. Isso ajuda o Terraform a fazer as alterações certas sem ficar confuso.
+
+Assim como seu diário de LEGO ajuda você a acompanhar suas criações, o 'Gerenciamento de Estado' no Terraform ajuda a acompanhar seu mundo digital e fazer alterações com segurança.
