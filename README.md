@@ -18,3 +18,16 @@ Você pode dizer ao Terraform como deseja que sua cidade fique, e ele moldará o
 
 ![alt text](./images/example.png)
 
+
+
+## Como o Terraform funciona?
+
+O núcleo (core) do Terraform usa duas fontes de entrada: 
+- Seus arquivos de configuração (seu estado desejado)
+- O estado atual, que é gerenciado pelo Terraform
+
+
+Providers: Os provedores expõem recursos, o que possibilita a criação de infraestrutura em todas essas plataformas:
+- IaaS: AWS, GCP, Azure
+- PaaS: Kubernetes, Heroku, Digital Ocean
+- SaaS: New Relic, Datadog
