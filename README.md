@@ -105,6 +105,11 @@ Seja você uma pequena equipe gerenciando alguns servidores ou uma grande organi
 
 ## Terraform vs Alternativas
 
+- https://developer.hashicorp.com/terraform/intro/vs
+- https://developer.hashicorp.com/terraform/intro/vs/chef-puppet
+- https://developer.hashicorp.com/terraform/intro/vs/cloudformation
+
+
 O Terraform oferece uma abstração flexível de recursos e provedores.
 
 Esse modelo permite representar tudo, desde hardware físico, máquinas virtuais e contêineres até provedores de e-mail e DNS.
