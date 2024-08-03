@@ -50,37 +50,39 @@ Ele abstrai as especificidades de diferentes provedores de infraestrutura, permi
 ## Por que utilizar Terraform? 
 
 **Infraestrutura como Código (IaC)**
-
 - O Terraform permite que você defina sua infraestrutura e configurações de aplicativos como código.
 - Isso significa que você pode usar práticas de codificação familiares, como controle de versão (git e github) e revisões de código (Pull Request e Code Review), para gerenciar sua infraestrutura, tornando-a mais confiável e fácil de manter.
 
 **Configuração Declarativa**
-
 - O Terraform usa uma abordagem declarativa, em que você define o estado final desejado de sua infraestrutura.
 - O Terraform então descobre como fazer as alterações necessárias para atingir esse estado, tratando automaticamente das dependências e da ordem das operações.
 
 
 **Gerenciamento de Dependências de Recursos**
-
 - O Terraform gerencia automaticamente as dependências entre recursos, garantindo que os recursos sejam criados ou atualizados na ordem correta.
 - Você pode especificar dependências explicitamente, e o Terraform cuidará do restante.
 
 **Gerenciamento de Estado**
-
 - O Terraform mantém um arquivo de estado que acompanha o estado atual de sua infraestrutura.
 - Isso ajuda a entender o que está atualmente implantado e permite que o Terraform detecte e faça alterações incrementalmente.
 
 **Planejamento de Alterações**
-
 - O Terraform fornece um comando "plan" que mostra quais alterações ele fará em sua infraestrutura antes de aplicá-las.
 - Isso ajuda a evitar alterações não planejadas e permite a revisão e aprovação de modificações na infraestrutura.
 
 **Modularidade e Reutilização**
-
 - Você pode criar componentes de infraestrutura reutilizáveis usando módulos do Terraform.
 - Isso promove a reutilização de código e simplifica o gerenciamento de configurações complexas.
 
 **Escalabilidade**
-
 - O Terraform pode gerenciar infraestruturas de qualquer tamanho, desde pequenos projetos até ambientes grandes e complexos.
 - Ele se dimensiona de acordo com suas necessidades e pode gerenciar milhares de recursos de forma eficiente.
+
+**Controle de Custos**
+Ao definir sua infraestrutura como código e usar o Terraform para gerenciá-la, você ganha uma melhor visibilidade dos custos de infraestrutura e pode implementar estratégias de economia de custos.
+
+**Segurança e Conformidade**
+O Terraform permite que você implemente políticas de segurança e conformidade como código, garantindo que sua infraestrutura siga as melhores práticas e os requisitos regulatórios.
+
+**Integração com CI/CD**
+O Terraform pode ser integrado aos seus pipelines de integração contínua e implantação contínua (CI/CD), permitindo automatizar alterações na infraestrutura junto com as implantações de aplicativos.
