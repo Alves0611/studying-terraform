@@ -47,3 +47,16 @@ Providers: Os provedores expõem recursos, o que possibilita a criação de infr
 A força do Terraform está em sua capacidade de fornecer uma maneira consistente, controlada por versão e reproduzível de gerenciar a infraestrutura.
 
 Ele abstrai as especificidades de diferentes provedores de infraestrutura, permitindo que você defina a infraestrutura como código e automatize o provisionamento e o gerenciamento de recursos em vários ambientes.
+
+
+## Por que utilizar Terraform? 
+
+**Infraestrutura como Código (IaC)**
+
+- O Terraform permite que você defina sua infraestrutura e configurações de aplicativos como código.
+- Isso significa que você pode usar práticas de codificação familiares, como controle de versão (git e github) e revisões de código (Pull Request e Code Review), para gerenciar sua infraestrutura, tornando-a mais confiável e fácil de manter.
+
+**Configuração Declarativa**
+
+- O Terraform usa uma abordagem declarativa, em que você define o estado final desejado de sua infraestrutura.
+- O Terraform então descobre como fazer as alterações necessárias para atingir esse estado, tratando automaticamente das dependências e da ordem das operações.
