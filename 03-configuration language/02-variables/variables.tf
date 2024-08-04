@@ -1,7 +1,17 @@
+variable "environment" {
+  type        = string
+  description = "The environment to deploy the infra to"
+  default     = "dev"
+
+  validation {
+    condition     = var.environment == "dev" || var.environment == "prod"
+    error_message = "We only have two environments (dev and prod)"
+  }
+}
+
 variable "aws_region" {
   type        = string
   description = "The region to deploy the infra to"
-  default     = "us-east-1"
 
   validation {
     condition     = can(regex("^[a-z][a-z]-[a-z]+-[0-9]+$", var.aws_region))
