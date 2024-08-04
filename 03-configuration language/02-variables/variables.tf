@@ -4,22 +4,46 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
-variable "read_capacity" {
-  type        = number
+variable "tags" {
+  type        = map(string)
   description = ""
-  default     = 5
+  default = {
+    "ManagedBy" = "Terraform"
+  }
 }
 
-variable "write_capacity" {
-  type        = number
+variable "dynamodb_field_list" {
+  type        = list(string)
   description = ""
-  default     = 5
+  default     = ["UserId", "GameTitle"]
 }
 
-variable "deletion_protection" {
-  type        = bool
+variable "database_config" {
+  type = object({
+    table_name          = string
+    read_capacity       = optional(number, 3)
+    write_capacity      = optional(number, 3)
+    deletion_protection = optional(bool, false)
+    hash_key = object({
+      name = string
+      type = string
+    })
+    range_key = object({
+      name = string
+      type = string
+    })
+  })
   description = ""
-  default     = false
+  default = {
+    table_name = "GameScores"
+    hash_key = {
+      name = "UserId"
+      type = "S"
+    }
+    range_key = {
+      name = "GameTitle"
+      type = "S"
+    }
+  }
 }
-
 
