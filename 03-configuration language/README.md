@@ -1,3 +1,7 @@
+## Linguagem de configuração do Terraform
+
+https://developer.hashicorp.com/terraform/language
+
 Imagine que uma configuração no Terraform é como uma receita para construir algo legal, como uma nave espacial de LEGO.
 
 Assim como uma receita diz o que você precisa e como juntar os ingredientes para fazer um bolo delicioso, uma configuração no Terraform diz ao seu computador quais coisas você quer criar no mundo digital e como criá-las.
