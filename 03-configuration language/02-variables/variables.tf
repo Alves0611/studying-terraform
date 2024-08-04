@@ -2,11 +2,16 @@ variable "aws_region" {
   type        = string
   description = "The region to deploy the infra to"
   default     = "us-east-1"
+
+  validation {
+    condition     = can(regex("^[a-z][a-z]-[a-z]+-[0-9]+$", var.aws_region))
+    error_message = "Invalid AWS region name"
+  }
 }
 
 variable "tags" {
   type        = map(string)
-  description = ""
+  description = "The common tags for all resources"
   default = {
     "ManagedBy" = "Terraform"
   }
@@ -14,7 +19,7 @@ variable "tags" {
 
 variable "dynamodb_field_list" {
   type        = list(string)
-  description = ""
+  description = "List of fields that the DynamoDB table has"
   default     = ["UserId", "GameTitle"]
 }
 
@@ -33,7 +38,7 @@ variable "database_config" {
       type = string
     })
   })
-  description = ""
+  description = "The configuration to create the DynamoDB table with"
   default = {
     table_name = "GameScores"
     hash_key = {
