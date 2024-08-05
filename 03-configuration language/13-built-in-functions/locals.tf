@@ -19,4 +19,8 @@ locals {
   jsonencode   = jsonencode({ "hello" = "world" })
   base64encode = base64encode("Hello World")
   template     = templatefile("food.tftpl", { food : "pasta" })
+
+  # Type conversion
+  can = can(formatdate("", timestamp()))
+  try = try(local.foo.boop, "fallback")
 }
