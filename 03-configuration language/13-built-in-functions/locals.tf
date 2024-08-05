@@ -7,4 +7,11 @@ locals {
   substr  = substr(local.bucket_name, 0, 63)
   length  = length(local.bucket_name)
   regex   = regex("[a-z]+", "1123123123.4341321adfasdfad13123")
+
+  # Collection
+  contains = contains(["a", "b", "c"], "a")
+  element  = element(["a", "b", "c"], 1)
+  index    = index(["a", "b", "c"], "b")
+  keys     = keys({ a = 1, c = 2, d = 3 })
+  lookup   = lookup({ a = "ay", b = "bee" }, "c", "what?")
 }
