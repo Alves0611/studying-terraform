@@ -14,4 +14,9 @@ locals {
   index    = index(["a", "b", "c"], "b")
   keys     = keys({ a = 1, c = 2, d = 3 })
   lookup   = lookup({ a = "ay", b = "bee" }, "c", "what?")
+
+  # Encoding
+  jsonencode   = jsonencode({ "hello" = "world" })
+  base64encode = base64encode("Hello World")
+  template     = templatefile("food.tftpl", { food : "pasta" })
 }
