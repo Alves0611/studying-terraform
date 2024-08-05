@@ -11,3 +11,9 @@ output "s3_bucket" {
     domain_name = data.aws_s3_bucket.this.bucket_domain_name
   }
 }
+
+output "locals" {
+  value = {
+    local.aws_dynamodb_table_arn = local.aws_dynamodb_table_arn
+  }
+}
