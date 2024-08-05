@@ -24,3 +24,4 @@ locals {
   can = can(formatdate("", timestamp()))
   try = try(local.foo.boop, "fallback")
 }
+
