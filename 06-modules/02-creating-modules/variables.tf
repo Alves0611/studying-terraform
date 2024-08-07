@@ -67,3 +67,40 @@ variable "public_access" {
   nullable = true
   default  = {}
 }
+
+variable "website" {
+  description = "Map containing website configuration"
+
+  type = object({
+    index_document           = optional(string)
+    error_document           = optional(string)
+    redirect_all_requests_to = optional(string)
+  })
+
+  nullable = true
+  default  = {}
+}
+
+variable "logging" {
+  description = "Map containing logging configuration"
+
+  type = object({
+    target_bucket = optional(string)
+    target_prefix = optional(string)
+  })
+
+  nullable = true
+  default  = {}
+}
+
+variable "key_prefix" {
+  description = "Prefix to put your key(s) inside the bucket. E.g.: logs -> all files will be uploaded under logs/"
+  type        = string
+  default     = ""
+}
+
+variable "filepath" {
+  description = "The local path where the desired files will be uploaded to the bucket"
+  type        = string
+  default     = ""
+}
