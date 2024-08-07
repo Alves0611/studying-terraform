@@ -1,3 +1,4 @@
+
 resource "aws_s3_bucket" "this" {
   bucket        = local.bucket_name
   force_destroy = var.force_destroy
@@ -91,4 +92,12 @@ resource "aws_s3_bucket_website_configuration" "this" {
       host_name = redirect_all_requests_to.value["redirect_all_requests_to"]
     }
   }
+}
+
+module "objects" {
+  source = "./modules/object"
+
+  bucket     = aws_s3_bucket.this.bucket
+  filepath   = var.filepath
+  key_prefix = var.key_prefix
 }
