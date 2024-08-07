@@ -64,3 +64,31 @@ resource "aws_s3_bucket_logging" "this" {
   target_bucket = lookup(var.logging, "target_bucket", null)
   target_prefix = lookup(var.logging, "target_prefix", null)
 }
+
+resource "aws_s3_bucket_website_configuration" "this" {
+  count = local.is_website_set ? 1 : 0
+
+  bucket = aws_s3_bucket.this.id
+
+  dynamic "index_document" {
+    for_each = lookup(var.website, "index_document", null) == null ? [] : [var.website]
+
+    content {
+      suffix = index_document.value["index_document"]
+    }
+  }
+
+  dynamic "error_document" {
+    for_each = lookup(var.website, "error_document", null) == null ? [] : [var.website]
+    content {
+      key = error_document.value["error_document"]
+    }
+  }
+
+  dynamic "redirect_all_requests_to" {
+    for_each = lookup(var.website, "redirect_all_requests_to", null) == null ? [] : [var.website]
+    content {
+      host_name = redirect_all_requests_to.value["redirect_all_requests_to"]
+    }
+  }
+}
