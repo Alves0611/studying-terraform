@@ -73,3 +73,28 @@ run "create_tables" {
     error_message = "Invalid table write capacity"
   }
 }
+
+
+# integration test
+run "create_buckets" {
+  # tfstate in-memory global
+
+  variables {
+    bucket_name = run.setup.bucket_name
+  }
+
+  assert {
+    condition     = aws_s3_bucket.s3_bucket.id == run.setup.bucket_name
+    error_message = "Invalid bucket name"
+  }
+
+  assert {
+    condition     = aws_s3_object.index.etag == filemd5("./www/index.html")
+    error_message = "Invalid eTag for index.html"
+  }
+
+  assert {
+    condition     = aws_s3_object.error.etag == filemd5("./www/error.html")
+    error_message = "Invalid eTag for error.html"
+  }
+}
