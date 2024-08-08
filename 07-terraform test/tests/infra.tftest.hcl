@@ -47,3 +47,29 @@ run "setup" {
     source = "./tests/setup"
   }
 }
+
+# integration test
+run "create_tables" {
+  # tfstate in-memory global -> pois não tem o bloco `module` configurado
+
+  variables {
+    table_name     = run.setup.table_name
+    read_capacity  = run.setup.read_capacity
+    write_capacity = run.setup.write_capacity
+  }
+
+  assert {
+    condition     = aws_dynamodb_table.users.name == run.setup.table_name
+    error_message = "Invalid table name"
+  }
+
+  assert {
+    condition     = aws_dynamodb_table.users.read_capacity == run.setup.read_capacity
+    error_message = "Invalid table read capacity"
+  }
+
+  assert {
+    condition     = aws_dynamodb_table.users.write_capacity == run.setup.write_capacity
+    error_message = "Invalid table write capacity"
+  }
+}
