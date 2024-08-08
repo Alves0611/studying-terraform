@@ -98,3 +98,23 @@ run "create_buckets" {
     error_message = "Invalid eTag for error.html"
   }
 }
+
+# unit test
+run "website_is_running" {
+  # tfstate in-memory -> module http
+
+  command = plan
+
+  module {
+    source = "./tests/http"
+  }
+
+  variables {
+    endpoint = run.create_buckets.website_endpoint
+  }
+
+  assert {
+    condition     = data.http.index.status_code == 200
+    error_message = "Website responded with HTTP status ${data.http.index.status_code}"
+  }
+}
